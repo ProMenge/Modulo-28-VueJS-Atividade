@@ -4,9 +4,12 @@ import {reactive} from 'vue';
 
 <template>
   <div class="container">
+    <h1>Olá</h1>
   </div>
 </template>
 
-<style scoped>
-
+<style lang="scss"scoped>
+ h1{
+  background-color: $red;
+ }
 </style>
