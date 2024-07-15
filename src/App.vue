@@ -1,15 +1,18 @@
 <script setup>
-import {reactive} from 'vue';
+import { reactive, computed } from 'vue';
+import CoalculatorHeader from './components/CalculatorHeader.vue';
+
+const state = reactive({
+  operator: "+",
+  value1: '',
+  value2: '',
+});
 </script>
 
 <template>
   <div class="container">
-    <h1>Olá</h1>
+    <CoalculatorHeader />
   </div>
 </template>
 
-<style lang="scss"scoped>
- h1{
-  background-color: $red;
- }
-</style>
+<style lang="scss" scoped></style>
